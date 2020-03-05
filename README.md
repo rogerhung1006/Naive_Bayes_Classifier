@@ -1,4 +1,4 @@
-# Sentiment analysis with self-built Naive Bayes Classifier
+# Sentiment Analysis with Self-built Naive Bayes Classifier
 ## Introduction
 To enhance my understanding in machine learning modeling and sentiment analysis, I decided to initiate this project. This is my first attemp to build a Naive Bayes Classifier from sctrach. I used the NLTK movie review corpus. 
 Reviews are separated into a training set (80% of the data) and a development set 
