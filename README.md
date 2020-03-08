@@ -9,7 +9,7 @@ Reviews are separated into a training set (80% of the data) and a development se
 I computed precision, recall, and F1 score for each class, as well as the overall accuracy. I personally evaluated the classifier based on precision and recall
 
 ## Two assumptions of Naive Bayes model
-Naive Bayes is a generative model that makes the bag of words assumption (position doesn’t matter) and the conditional independence assumption (words are conditionally independent of each other given the class).
+Naive Bayes is a generative model that makes 1.) the bag of words assumption (position doesn’t matter) and 2.) the conditional independence assumption (words are conditionally independent of each other given the class).
 
 ## Analysis and improvement
 At first, I tried to use the top 100 features with highest information gain; however, the result turned out to be quite disappointing. Both the F1 score and accuracy were quite low, and the recall wasn't ideal either (as shown in the following graph).
