@@ -12,7 +12,9 @@ I computed precision, recall, and F1 score for each class, as well as the overal
 Naive Bayes is a generative model that makes the bag of words assumption (position doesn’t matter) and the conditional independence assumption (words are conditionally independent of each other given the class).
 
 ## Analysis and improvement
+At first, I tried to use the top 100 features with highest information gain; however, the result turned out to be quite disappointing. Both the F1 score and accuracy were quite low, and the recall wasn't ideal either (as shown in the figure 1.). 
 ![Screen Shot 2020-03-08 at 12 28 23 AM](https://user-images.githubusercontent.com/60050802/76157216-db30dd00-60d3-11ea-9fd1-e55d11a07d51.png)
 
+To optimize the classifier, I implemented a self-defined grid search function, which serves the purpose of looking for the best number of features and training the model based on the selected features. Lucklily, this time we derived a result that is more pleasant. 
 ![Screen Shot 2020-03-08 at 12 10 54 AM](https://user-images.githubusercontent.com/60050802/76157027-55139700-60d1-11ea-9b17-d74e56fa2840.png)
 
