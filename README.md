@@ -37,7 +37,7 @@ At first, I tried to use the top 100 features with highest information gain; how
 
 To optimize the classifier, I implemented a self-defined grid search function, which serves the purpose of looking for the best number of features and training the model based on the selected features. Lucklily, this time we derived a result that is more pleasant. 
 
-![Screen Shot 2020-03-08 at 12 10 54 AM](https://user-images.githubusercontent.com/60050802/76157027-55139700-60d1-11ea-9b17-d74e56fa2840.png)
+![final_result](https://user-images.githubusercontent.com/60050802/76669654-02b7f780-6563-11ea-9814-e24fc248975d.png)
 
 
 To optimize the classifier, I implemented a self-defined grid search function, which serves the purpose of looking for the best number of features and training the model based on the selected features. Lucklily, this time we derived a result that is more pleasant. 
