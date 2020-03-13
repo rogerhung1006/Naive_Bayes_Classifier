@@ -15,11 +15,10 @@ Naive Bayes is a generative model that makes 1.) the bag of words assumption (po
 This function serves the purpose of training the Naive Bayes Classifier. It takes two inputs, one is training data and the other is the select rate, which is the hyperparameter that user can define themselves. The training function computes the  maximum likelihood estimate. I commplete this task by using frequencies in the data. For example, I derive the maximum likelihood estimate of P(wi|c) by assuming a feature is just the existence of a word in the document’s bag of words, and computing P(wi|c) as the fraction of times the word wi appears among all words in all documents of class c. Note that I use add-1 smoothing in this case to avoid getting 0 in probability when ecountering unseen words.
 
 
+![T4](https://user-images.githubusercontent.com/60050802/76669506-48c08b80-6562-11ea-82fd-d628355260c1.png)
 
+Figure 1. The naive Bayes algorithm, using add-1 smoothing (From Jurafsky and Martin’s Speech and Language Processing (Chapter 4)<br >
 
-
-
-Figire 1. The naive Bayes algorithm, using add-1 smoothing
 
 **- Test function**<br >
 
