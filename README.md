@@ -35,6 +35,7 @@ The select_features function take two inputs as well, train_set and select_rate.
 
 **- Grid search function**<br >
 The grid_search take training set, validating set and a list of select rates as input and generates a dataframe containing the performance of classifier on the basis of different possible combination of features.
+![dataframe](https://user-images.githubusercontent.com/60050802/76670519-57f60800-6567-11ea-9582-38b7a2d4e43c.png)
 
 
 
@@ -44,6 +45,7 @@ At first, I tried to use the top 100 features with highest information gain; how
 ![Screen Shot 2020-03-08 at 12 28 23 AM](https://user-images.githubusercontent.com/60050802/76157216-db30dd00-60d3-11ea-9fd1-e55d11a07d51.png)
 
 To optimize the classifier, I implemented a self-defined grid search function, which serves the purpose of looking for the best number of features and training the model based on the selected features. Lucklily, this time we derived a result that is more pleasant. 
+
 
 ![final_result](https://user-images.githubusercontent.com/60050802/76669654-02b7f780-6563-11ea-9814-e24fc248975d.png)
 
