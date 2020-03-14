@@ -62,7 +62,9 @@ To optimize the classifier, I implemented a self-defined grid search function, w
 
 
 ![final_result](https://user-images.githubusercontent.com/60050802/76669654-02b7f780-6563-11ea-9814-e24fc248975d.png)
-*Figure 6. Final confusion matrix* 
+*Figure 6. Final confusion matrix* <br>
+<br>
+
 
 
 
