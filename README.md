@@ -1,15 +1,15 @@
 # Sentiment Analysis with Self-Built Naive Bayes Classifier
 ## Introduction
 To enhance my understanding in probabilistic machine learning classifier, I decided to initiate a sentiment analysis project. In this binary classification project, I attempted to build a Naive Bayes Classifier from sctrach and utilized the self-built classifier to conduct the sentiment classification or say, the extraction of sentiment (the positive or negative orientation that a writer expresses toward some object). In this project, I used the NLTK movie review corpus. Reviews are separated into a training set (80% of the data) and a development set (10% of the data). Within each set, reviews are sorted by sentiment (positive / negative). The files are already tokenized. Each review is in its own file. In the project, I follow the guidance from Jurafsky and Martin’s Speech and Language Processing.<br>
-
+<br>
 ## Notes
 - In the Feature Selection process, I selected the features by computing mutual infomation for each word
 - For classifier evaluation, I created a confusion maxtrix that takes 'negative' as 0 and 'positive' as 1. Additionally, 
 I computed precision, recall, and F1 score for each class, as well as the overall accuracy. I personally evaluated the classifier based on precision and recall<br>
-
+<br>
 ## Two assumptions of Naive Bayes Model
 Naive Bayes is a generative model that makes 1.) the bag of words assumption (position doesn’t matter) and 2.) the conditional independence assumption (words are conditionally independent of each other given the class).<br>
-
+<br>
 ## Main Function Insturction
 **- Trianing function**<br >
 This function serves the purpose of training the Naive Bayes Classifier. It takes two inputs, one is training data and the other is the select rate, which is the hyperparameter that user can define themselves. The training function computes the  maximum likelihood estimate. I commplete this task by using frequencies in the data. For example, I derive the maximum likelihood estimate of P(wi|c) by assuming a feature is just the existence of a word in the document’s bag of words, and computing P(wi|c) as the fraction of times the word wi appears among all words in all documents of class c. Note that I use add-1 smoothing in this case to avoid getting 0 in probability when ecountering unseen words.
