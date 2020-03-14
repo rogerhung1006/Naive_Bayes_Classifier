@@ -53,12 +53,16 @@ The grid_search take training set, validating set and a list of select rates as 
 ## Analysis and Improvement
 At first, without doing grid search, I tried to use the top 100 features with highest information gain; however, the result turned out to be quite disappointing. Both the F1 score and accuracy were quite low, and the precision wasn't ideal either (as shown in the following graph).
 
-![Screen Shot 2020-03-08 at 12 28 23 AM](https://user-images.githubusercontent.com/60050802/76157216-db30dd00-60d3-11ea-9fd1-e55d11a07d51.png)
+![Screen Shot 2020-03-08 at 12 28 23 AM](https://user-images.githubusercontent.com/60050802/76157216-db30dd00-60d3-11ea-9fd1-e55d11a07d51.png)<br>
+*Figure 5. Initial confusion matrix* 
+
+<br>
 
 To optimize the classifier, I implemented a self-defined grid search function, which serves the purpose of looking for the best number of features and training the model based on the selected features. Lucklily, this time we derived a result that is more pleasant. 
 
 
 ![final_result](https://user-images.githubusercontent.com/60050802/76669654-02b7f780-6563-11ea-9814-e24fc248975d.png)
+*Figure 6. Final confusion matrix* 
 
 
 
