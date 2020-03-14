@@ -36,12 +36,12 @@ The select_features function take two inputs as well, train_set and select_rate.
 The grid_search take training set, validating set and a list of select rates as input and generates a dataframe containing the performance of classifier on the basis of different possible combination of features. In this case, I use F1 score and accuracy as my main metrics to rank the classfier.
 
 ![dataframe](https://user-images.githubusercontent.com/60050802/76670519-57f60800-6567-11ea-9582-38b7a2d4e43c.png)<br>
-Figure 2. Partial result of the dataframe
+Figure 2. Partial result of the dataframe<br>
 
 
 ![plot](https://user-images.githubusercontent.com/60050802/76670542-778d3080-6567-11ea-93f4-9557a15e9fe8.png)<br>
-Figure 2. Performance Plot
-
+Figure 2. Performance Plot<br>
+<br>
 
 ## Analysis and Improvement
 At first, without doing grid search, I tried to use the top 100 features with highest information gain; however, the result turned out to be quite disappointing. Both the F1 score and accuracy were quite low, and the precision wasn't ideal either (as shown in the following graph).
