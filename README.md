@@ -21,12 +21,20 @@ Figure 1. The naive Bayes algorithm, using add-1 smoothing (From Jurafsky and Ma
 
 
 **- Test function**<br >
+This function serves the purpose of applying our classifier to the testing data and taking the argmax to find the most probable class. Note that this function would generate a dictionary 'results' such that:<br>
+results[filename][‘correct’] = correct class
+results[filename][‘predicted’] = predicted class
 
 
+**- Evaluate function**<br >
+This function would, given the results of test, compute precision, recall, and F1 score for each class, as well as the overall accuracy, and print out the performance of the classifier.
 
-- Evaluate function
+**- Select feature function**<br >
+The select_features function take two inputs as well, train_set and select_rate. The function basically select features by computing mutual information for each word, which is a value that falls between 0 and 1, and selects the top n features with highest information gain. (n is decided based on the the selec_rate that user defined in the first place)
 
-- Select features function
+
+**- Grid search function**<br >
+The grid_search take training set, validating set and a list of select rates as input and generates a dataframe containing the performance of classifier on the basis of different possible combination of features.
 
 
 
@@ -40,4 +48,4 @@ To optimize the classifier, I implemented a self-defined grid search function, w
 ![final_result](https://user-images.githubusercontent.com/60050802/76669654-02b7f780-6563-11ea-9814-e24fc248975d.png)
 
 
-To optimize the classifier, I implemented a self-defined grid search function, which serves the purpose of looking for the best number of features and training the model based on the selected features. Lucklily, this time we derived a result that is more pleasant. 
+
