@@ -41,7 +41,7 @@ Figure 2. Partial result of the dataframe<br>
 
 
 ![plot](https://user-images.githubusercontent.com/60050802/76670542-778d3080-6567-11ea-93f4-9557a15e9fe8.png)<br>
-Figure 2. Performance Plot<br>
+Figure 3. Performance Plot<br>
 <br>
 
 ## Analysis and Improvement
