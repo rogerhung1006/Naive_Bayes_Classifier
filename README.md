@@ -25,7 +25,7 @@ results[filename][‘predicted’] = predicted class
 
 
 ![T4](https://user-images.githubusercontent.com/60050802/76669506-48c08b80-6562-11ea-82fd-d628355260c1.png)<br>
-Figure 1. The naive Bayes algorithm, using add-1 smoothing (From Jurafsky and Martin’s Speech and Language Processing (Chapter 4)<br >
+*Figure 1. The naive Bayes algorithm, using add-1 smoothing (From Jurafsky and Martin’s Speech and Language Processing (Chapter 4)* <br >
 <br>
 
 **- Evaluate function**<br >
@@ -33,18 +33,21 @@ This function would, given the results of test, compute precision, recall, and F
 <br>
 
 **- Select feature function**<br >
-The select_features function take two inputs as well, train_set and select_rate. The function basically select features by computing mutual information for each word, which is a value that falls between 0 and 1, and selects the top n features with highest information gain. (n is decided based on the the selec_rate that user defined in the first place)
+The select_features function take two inputs as well, train_set and select_rate. The function basically select features by computing mutual information for each word, which is a value that falls between 0 and 1, and selects the top n features with highest information gain. (n is decided based on the the selec_rate that user defined in the first place)<br>
+<img width="309" alt="formula" src="https://user-images.githubusercontent.com/60050802/76670809-f5057080-6568-11ea-805c-cdd5e00bf7b2.png"><br>
+*Figure 2. Formula for mutual information calculation*
+
 <br>
 
 **- Grid search function**<br >
 The grid_search take training set, validating set and a list of select rates as input and generates a dataframe containing the performance of classifier on the basis of different possible combination of features. In this case, I use F1 score and accuracy as my main metrics to rank the classfier.
 
 ![dataframe](https://user-images.githubusercontent.com/60050802/76670519-57f60800-6567-11ea-9582-38b7a2d4e43c.png)<br>
-Figure 2. Partial result of the dataframe<br>
+*Figure 3. Partial result of the dataframe* <br>
 
 
 ![plot](https://user-images.githubusercontent.com/60050802/76670542-778d3080-6567-11ea-93f4-9557a15e9fe8.png)<br>
-Figure 3. Performance Plot<br>
+*Figure 4. Performance Plot* <br>
 <br>
 
 ## Analysis and Improvement
