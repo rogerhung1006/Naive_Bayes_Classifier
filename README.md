@@ -1,4 +1,5 @@
 # Sentiment Analysis with Self-Built Naive Bayes Classifier
+<strong/>Classification lies at the heart of both human and machine intelligence.</strong>
 ## Introduction
 To enhance my understanding in probabilistic machine learning classifier, I decided to initiate a sentiment analysis project. In this binary classification project, I attempted to build a Naive Bayes Classifier from sctrach and utilized the self-built classifier to conduct the sentiment classification or say, the extraction of sentiment (the positive or negative orientation that a writer expresses toward some object). In this project, I used the NLTK movie review corpus. Reviews are separated into a training set (80% of the data) and a development set (10% of the data). Within each set, reviews are sorted by sentiment (positive / negative). The files are already tokenized. Each review is in its own file. In the project, I follow the guidance from Jurafsky and Martin’s Speech and Language Processing.<br>
 <br>
@@ -62,7 +63,8 @@ To optimize the classifier, I implemented a self-defined grid search function, w
 
 
 ![final_result](https://user-images.githubusercontent.com/60050802/76669654-02b7f780-6563-11ea-9814-e24fc248975d.png)
-*Figure 6. Final confusion matrix* <br>
+*Figure 6. Final confusion matrix* 
+<br>
 <br>
 
 
